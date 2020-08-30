@@ -65,7 +65,7 @@ namespace Interest_Calculator_Console.Loan_Information
         }
         #endregion
 
-        #region loan term represented as compounding periods
+        #region Loan term represented as compounding periods
         private double loanTermInCompoundingPeriods;
 
         public double GetLoanTermInCompoundingPeriods()
