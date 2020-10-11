@@ -11,8 +11,9 @@ namespace Interest_Calculator_Console
     {
         #region Properties
         LoanInformation loanInformation;
-
+        LoanCalculations loanCalculations;
         #endregion
+
         static void Main(string[] args)
         {
         }
