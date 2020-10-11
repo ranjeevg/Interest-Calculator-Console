@@ -8,7 +8,7 @@ namespace Interest_Calculator_Console.Models
 {
     public class LoanInformation
     {
-        #region Principal
+        #region 01. Principal
         private decimal principal;
 
         public decimal GetPrincipal()
@@ -22,7 +22,7 @@ namespace Interest_Calculator_Console.Models
         }
         #endregion
 
-        #region APR
+        #region 02. APR
         private decimal aPR;
 
         public decimal GetAPR()
@@ -36,7 +36,7 @@ namespace Interest_Calculator_Console.Models
         }
         #endregion
 
-        #region Compounding frequency
+        #region 03. Compounding frequency
 
         private int annualCompoundingFrequency;
 
@@ -51,7 +51,7 @@ namespace Interest_Calculator_Console.Models
         }
         #endregion
 
-        #region Loan term in years
+        #region 04. Loan term in years
         private decimal loanTermInYears;
 
         public decimal GetLoanTermInYears()
@@ -65,7 +65,7 @@ namespace Interest_Calculator_Console.Models
         }
         #endregion
 
-        #region Loan term represented as compounding periods
+        #region 05. Loan term represented as compounding periods
         private decimal loanTermInCompoundingPeriods;
 
         public decimal GetLoanTermInCompoundingPeriods()
@@ -79,7 +79,7 @@ namespace Interest_Calculator_Console.Models
         }
         #endregion
 
-        #region NumberOfMonthsPaid
+        #region 06. Number of months paid
         private int numberOfMonthsPaid;
 
         public int GetNumberOfMonthsPaid()
@@ -93,7 +93,7 @@ namespace Interest_Calculator_Console.Models
         }
         #endregion
 
-        #region OutstandingBalance
+        #region 07. Outstanding balance
         private decimal outstandingBalance;
 
         public decimal GetOutstandingBalance()
