@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interest_Calculator_Console.Models
 {
-    public class LoanCalculator
+    public class LoanCalculations
     {
         public decimal CalculateMonthlyPayments()
         {
