@@ -4,33 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interest_Calculator_Console.Loan_Information
+namespace Interest_Calculator_Console.Models
 {
     public class LoanInformation
     {
         #region Principal
-        private double principal;
+        private decimal principal;
 
-        public double GetPrincipal()
+        public decimal GetPrincipal()
         {
             return principal;
         }
 
-        public void SetPrincipal(double value)
+        public void SetPrincipal(decimal value)
         {
             principal = value;
         }
         #endregion
 
         #region APR
-        private double aPR;
+        private decimal aPR;
 
-        public double GetAPR()
+        public decimal GetAPR()
         {
             return aPR;
         }
 
-        public void SetAPR(double value)
+        public void SetAPR(decimal value)
         {
             aPR = value;
         }
@@ -52,28 +52,28 @@ namespace Interest_Calculator_Console.Loan_Information
         #endregion
 
         #region Loan term in years
-        private double loanTermInYears;
+        private decimal loanTermInYears;
 
-        public double GetLoanTermInYears()
+        public decimal GetLoanTermInYears()
         {
             return loanTermInYears;
         }
 
-        public void SetLoanTermInYears(double value)
+        public void SetLoanTermInYears(decimal value)
         {
             loanTermInYears = value;
         }
         #endregion
 
         #region Loan term represented as compounding periods
-        private double loanTermInCompoundingPeriods;
+        private decimal loanTermInCompoundingPeriods;
 
-        public double GetLoanTermInCompoundingPeriods()
+        public decimal GetLoanTermInCompoundingPeriods()
         {
             return loanTermInCompoundingPeriods;
         }
 
-        public void SetLoanTermInCompoundingPeriods(double value)
+        public void SetLoanTermInCompoundingPeriods(decimal value)
         {
             loanTermInCompoundingPeriods = value;
         }
