@@ -79,22 +79,31 @@ namespace Interest_Calculator_Console.Models
         }
         #endregion
 
-        #region Is this loan compounded? (Assuming yes by default)
-        private bool? isCompounded;
+        #region NumberOfMonthsPaid
+        private int numberOfMonthsPaid;
 
-        public bool? getIsCompounded()
+        public int GetNumberOfMonthsPaid()
         {
-            return isCompounded;
+            return numberOfMonthsPaid;
         }
 
-        public void SetIsCompounded(bool? Boole)
+        public void SetNumberOfMonthsPaid (int value)
         {
-            if (Boole is null)
-            {
-                isCompounded = true;
-                return;
-            }
-            isCompounded = Boole;
+            numberOfMonthsPaid = value;
+        }
+        #endregion
+
+        #region OutstandingBalance
+        private decimal outstandingBalance;
+
+        public decimal GetOutstandingBalance()
+        {
+            return outstandingBalance;
+        }
+
+        public void SetOutstandingBalance(decimal value)
+        {
+            outstandingBalance = value;
         }
         #endregion
     }
