@@ -78,5 +78,24 @@ namespace Interest_Calculator_Console.Models
             loanTermInCompoundingPeriods = value;
         }
         #endregion
+
+        #region Is this loan compounded? (Assuming yes by default)
+        private bool? isCompounded;
+
+        public bool? getIsCompounded()
+        {
+            return isCompounded;
+        }
+
+        public void SetIsCompounded(bool? Boole)
+        {
+            if (Boole is null)
+            {
+                isCompounded = true;
+                return;
+            }
+            isCompounded = Boole;
+        }
+        #endregion
     }
 }
